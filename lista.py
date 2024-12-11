@@ -1,3 +1,4 @@
+import galo, quatro, ohglori
 def exibir_menu():
     print("esolhe um jogo:")
     print("1 - jogo do galo")
@@ -11,13 +12,13 @@ while jogo != 0:
     try:
         jogo = int(input("Escolha o jogo: "))
         if jogo == 1:
-            import galo
+            galo.start(" ")
             break
         elif jogo == 2:
-            import quatro
+            quatro.start()
             break
         elif jogo == 3:
-            import ohglori
+            ohglori.start()
             break
         else:
             print("Opção inválida! Tente novamente.")
