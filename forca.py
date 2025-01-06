@@ -67,7 +67,7 @@ def boneco(lvl):
 
 
 
-def printPal(char):
+def play(char):
     print('-' * 25)
     if char not in palavra and char != "":
         usado_errado.append(char)
@@ -106,6 +106,5 @@ def printPal(char):
                 print("aviso: letra invalida")
             else:
                 break
-        printPal(next_char)
+        play(next_char)
 
-printPal("")
